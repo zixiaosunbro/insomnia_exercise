@@ -1,0 +1,19 @@
+redis:
+  insomnia:
+    uri: host.docker.internal:6379
+    connect_timeout: 500ms      # optional, default to 500 ms
+    read_timeout: 500ms         # optional, default to 500 ms
+    write_timeout: 500ms        # optional, default to 500 ms
+    pool_max_active: 20         # optional, the pool size, default to 40
+    pool_idle_timeout: 60s    # optional, the connection idle timeout in pool, default to 60s
+
+
+db:
+  insomnia:
+    driver: "mysql"
+    master: "root:root@tcp(host.docker.internal)/ares_unittest"
+    slave: "root:root@tcp(host.docker.internal)/ares_unittest"
+    max_lifetime: 5m
+    max_open_conns: 60
+    max_idle_conns: 300
+    autocommit: false

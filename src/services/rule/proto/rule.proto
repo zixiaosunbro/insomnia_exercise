@@ -1,0 +1,60 @@
+syntax = "proto3";
+
+package insomnia.rule;
+option go_package = "proto/rule";
+
+message ProjectRule {
+  int32 organ_id = 1;
+  int32 project_id = 2;
+  string rule = 3;
+  int32 rule_category = 4;
+  string project_name = 5;
+}
+
+message PingRequest {
+  string message = 1;
+}
+
+message PingResponse {
+  string message = 1;
+}
+
+message AddProjectRuleRequest {
+  uint64 user_id = 1;
+  int32 organization_id = 2;
+  int32 project_id = 3;
+  string rule = 4;
+  int32 rule_category = 5;
+}
+
+message AddProjectRuleReply {
+  // TODO: add return val
+}
+
+message UpdateProjectRuleRequest {
+  uint64 user_id = 1;
+  int32 organization_id = 2;
+  int32 project_id = 3;
+  string rule = 4;
+  int32 rule_category = 5;
+}
+
+message UpdateProjectRuleReply {
+
+}
+
+message GetProjectRuleRequest {
+  uint64 user_id = 1;
+  int32 organization_id = 2;
+}
+
+message GetProjectRuleReply {
+  repeated ProjectRule project_rules = 1;
+}
+
+service RuleService {
+  rpc Ping(PingRequest) returns (PingResponse) {}
+  rpc AddProjectRule(AddProjectRuleRequest) returns (AddProjectRuleReply) {}
+  rpc UpdateProjectRule(UpdateProjectRuleRequest) returns (UpdateProjectRuleReply) {}
+  rpc GetProjectRule(GetProjectRuleRequest) returns (GetProjectRuleReply) {}
+}

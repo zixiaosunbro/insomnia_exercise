@@ -1,0 +1,30 @@
+.
+├── app
+│   └── server.go
+├── config
+│   ├── config.go
+│   ├── impl
+│   │   └── config.go
+│   ├── middleware
+│   │   └── initial.go
+│   ├── mysql.go
+│   ├── redis.go
+│   └── test.go
+├── log
+│   └── logger.go
+├── middleware_custom
+│   ├── grpc
+│   │   ├── err.go
+│   │   └── interceptor.go
+│   ├── mysql
+│   │   └── options.go
+│   └── redis
+│       └── lock.go
+├── pkg.txt
+└── utils
+    ├── error.go
+    ├── random.go
+    ├── util.go
+    └── util_test.go
+
+11 directories, 17 files

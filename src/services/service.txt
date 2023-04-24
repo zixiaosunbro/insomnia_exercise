@@ -1,0 +1,43 @@
+.
+├── rule
+│   ├── Makefile
+│   ├── app.yaml
+│   ├── application
+│   │   ├── rule.go
+│   │   ├── rule_test.go
+│   │   ├── service.go
+│   │   ├── service_test.go
+│   │   ├── user.go
+│   │   └── user_test.go
+│   ├── bin
+│   │   └── server
+│   ├── cmds
+│   │   └── service
+│   │       ├── build.sh
+│   │       └── server.go
+│   ├── config
+│   │   ├── dev.yaml
+│   │   └── pro.yaml
+│   ├── domain
+│   │   └── rule
+│   │       ├── entity.go
+│   │       ├── init.go
+│   │       ├── repo.go
+│   │       ├── repo_test.go
+│   │       ├── service.go
+│   │       └── service_test.go
+│   ├── error
+│   │   └── error.go
+│   ├── handler
+│   │   └── rule.go
+│   ├── proto
+│   │   ├── rule
+│   │   │   └── rule.pb.go
+│   │   └── rule.proto
+│   ├── resource.go
+│   ├── rule.sql
+│   └── thirdparty
+│       └── init.go
+└── service.txt
+
+14 directories, 27 files

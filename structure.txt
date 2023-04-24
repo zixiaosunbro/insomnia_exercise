@@ -1,0 +1,84 @@
+.
+├── README.md
+├── go.mod
+├── go.sum
+├── goland_test.png
+├── scripts
+│   └── docker
+│       ├── Dockerfile
+│       ├── build.sh
+│       └── entrypoint.sh
+├── src
+│   ├── pkg
+│   │   ├── app
+│   │   │   └── server.go
+│   │   ├── config
+│   │   │   ├── config.go
+│   │   │   ├── impl
+│   │   │   │   └── config.go
+│   │   │   ├── middleware
+│   │   │   │   └── initial.go
+│   │   │   ├── mysql.go
+│   │   │   ├── redis.go
+│   │   │   └── test.go
+│   │   ├── log
+│   │   │   └── logger.go
+│   │   ├── middleware_custom
+│   │   │   ├── grpc
+│   │   │   │   ├── err.go
+│   │   │   │   └── interceptor.go
+│   │   │   ├── mysql
+│   │   │   │   └── options.go
+│   │   │   └── redis
+│   │   │       └── lock.go
+│   │   └── utils
+│   │       ├── error.go
+│   │       ├── random.go
+│   │       ├── util.go
+│   │       └── util_test.go
+│   └── services
+│       └── rule
+│           ├── Makefile
+│           ├── app.yaml
+│           ├── application
+│           │   ├── rule.go
+│           │   ├── rule_test.go
+│           │   ├── service.go
+│           │   ├── service_test.go
+│           │   ├── user.go
+│           │   └── user_test.go
+│           ├── bin
+│           │   └── server
+│           ├── cmds
+│           │   └── service
+│           │       ├── build.sh
+│           │       └── server.go
+│           ├── config
+│           │   ├── dev.yaml
+│           │   └── pro.yaml
+│           ├── domain
+│           │   └── rule
+│           │       ├── entity.go
+│           │       ├── init.go
+│           │       ├── repo.go
+│           │       ├── repo_test.go
+│           │       ├── service.go
+│           │       └── service_test.go
+│           ├── error
+│           │   └── error.go
+│           ├── handler
+│           │   └── rule.go
+│           ├── proto
+│           │   ├── rule
+│           │   │   └── rule.pb.go
+│           │   └── rule.proto
+│           ├── resource.go
+│           ├── rule.sql
+│           └── thirdparty
+│               ├── init.go
+│               └── services
+│                   ├── authentication.go
+│                   └── organization.go
+└── structure.txt
+
+30 directories, 52 files

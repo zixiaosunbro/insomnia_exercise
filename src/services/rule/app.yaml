@@ -1,0 +1,4 @@
+# service use middleware components
+plugins:
+  db: true
+  redis:  true

@@ -1,0 +1,19 @@
+redis:
+  insomnia:
+    uri: 127.0.0.1:6379
+    connect_timeout: 500ms
+    read_timeout: 500ms
+    write_timeout: 500ms
+    pool_max_active: 20
+    pool_idle_timeout: 60s
+
+
+db:
+  insomnia:
+    driver: "mysql"
+    master: "root:root@tcp(127.0.0.1:3306)/ares_unittest"
+    slave: "root:root@tcp(127.0.0.1:3306)/ares_unittest"
+    max_lifetime: 5m
+    max_open_conns: 20
+    max_idle_conns: 20
+    autocommit: false
